@@ -31,14 +31,14 @@ cd WeCloud
 run these commands:
 ```
 To run the server:
-  python3 server.py #server_port
+  python server.py #server_port
 To run the client from anycomputer:
     #1st Argument: IP adress
     #2nd Argument: Server's port.
     #3rd Argument: Path to the folder
     #4th Argument: Time to address the server.
     #5th Argument(optional): key to the folder in the server.
-  python3 client.py #1 #2 #3 ...
+  python client.py #1 #2 #3 ...
 ```
 
 Enjoy!
