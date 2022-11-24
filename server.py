@@ -75,7 +75,7 @@ def process_command(cmd_token):
         # Name of file
         server_rcv_buff, file_name = utils.get_token(client_socket, server_rcv_buff)
         file_name = utils.system_path(file_name)
-        # Creare file
+        # Create file
         # return the normal path without redundant additions between systems.
         abs_path = os.path.join(SERVER_DIR, curr_client_id, file_name)
         utils.create_file(abs_path)
@@ -120,7 +120,7 @@ def process_command(cmd_token):
         # Get absolute paths
         abs_src_path = os.path.join(SERVER_DIR, curr_client_id, src_path)
         abs_dest_path = os.path.join(SERVER_DIR, curr_client_id, dest_path)
-        # Move the files
+        # Move the files'
         # os.renames(abs_src_path, abs_dest_path)
         utils.move_folder(abs_src_path, abs_dest_path)
         # Update changes map
@@ -161,7 +161,7 @@ def update_client(send_everything=False):
 
 if __name__ == "__main__":
     # GET SERVER PORT
-    #Enter in the arguments server port
+    # Enter the arguments server port
     server_port = utils.validate_port(sys.argv[1])
 
     if server_port is None:

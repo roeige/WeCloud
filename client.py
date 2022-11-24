@@ -168,7 +168,7 @@ def login_procedure():
         # get all files and dirs from current file(if there are such files)
         # send all the files to the server.
         dir_arr, file_arr = utils.get_dirs_and_files(client_dir)
-        # send all files and dirs (if they exists):
+        # send all files and dirs (if they exist):
         utils.send_all_dirs_and_files(client_socket, dir_arr, file_arr, client_dir)
 
 
@@ -289,11 +289,11 @@ def on_start_up():
 
 if __name__ == "__main__":
     # ==========  Enter as Arguments ==========
-    #1st Argument: IP adress
-    #2st Argument: Server's port.
-    #3st Argument: Path to the folder
-    #4st Argument: Time to address the server.
-    #5st Argument(optional): key to the folder in the server.
+    # 1st Argument: IP adress
+    # 2nd Argument: Server's port.
+    # 3rd Argument: Path to the folder
+    # 4th Argument: Time to address the server.
+    # 5st Argument(optional): key to the folder in the server.
     on_start_up()
 
     watch = OnMyWatch()

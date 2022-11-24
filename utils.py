@@ -18,7 +18,7 @@ def remove_file(abs_path):
 
 
 def system_path(path):
-    # check if the system is Unix and we came from windows
+    # check if the system is Unix, and we came from windows
     if os.name == 'posix':
         return path.replace('\\', '/')
     # if we are in windows use python lib func
@@ -65,7 +65,7 @@ def get_token(socket, buff, num_bytes_to_read=-1):
             except:
                 buff.append(data)
 
-    # whether its empty or not, we want to return one command_token from the buff list we have 😀'
+    # whether It's empty or not, we want to return one command_token from the buff list we have 😀'
     if len(buff) > 0:
         #
         return buff, buff.pop(0)
